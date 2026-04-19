@@ -1,6 +1,7 @@
 on:
     schedule:
         - cron: "* 8,16 * *  *" #Runs every minute, at 08:00 and 16:00
+    workflow_dispatch:
 
 jobs:
     automation-stat-checking:
