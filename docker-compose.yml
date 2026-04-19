@@ -1,0 +1,8 @@
+services:
+  app:
+    container_name: container
+    build: .
+    volumes:
+      - ./logs:/app/logs
+    environment:
+      - INTERVAL=50
