@@ -1,0 +1,17 @@
+on:
+    schedule:
+        - cron: "* 8,16 * *  *" #Runs every minute, at 08:00 and 16:00
+
+jobs:
+    automation-stat-checking:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v5
+
+            - name: Run code
+              run: |
+                docker compose up -d --build
+            
+            - name: Show statistics
+              run: |
+                cat /logs/* >> $GITHUB_STEP_SUMMARY
