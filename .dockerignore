@@ -1,0 +1,11 @@
+# Ignore build artifacts and cache
+**/node_modules
+**/target
+__pycache__
+*.pyc
+.cache
+.idea
+npm-debug.log
+.git
+.env
+docker-compose.yml
