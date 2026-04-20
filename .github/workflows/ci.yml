@@ -15,4 +15,4 @@ jobs:
             
             - name: Show statistics
               run: |
-                cat /logs/* >> $GITHUB_STEP_SUMMARY
+                cat ./logs/* >> $GITHUB_STEP_SUMMARY
