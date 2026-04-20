@@ -15,4 +15,4 @@ jobs:
             
             - name: Show statistics
               run: |
-               sed -r "s/\x1B\[([0-9]{1,3}(;[0-9]{1,2})?)?[mGK]//g" ./logs/* >> $GITHUB_STEP_SUMMARY
+               sed -r "s/\x1B\[([0-9]{1,3}(;[0-9]{1,2})?)?[mGK]//g" ./logs/* >> $GITHUB_STEP_SUMMARY #Deleting symbols that should show colourful outpu
